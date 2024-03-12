@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/employeeform.css">
+    <link rel="stylesheet" href="css/topsidenavbars.css">
+</head>
+<body>
+    <header class="header">
+      <nav class="topnav">
+          <a class="active" href="index.php">Logout</a>
+          <a href="#about">About</a>
+          <a href=" ">Contact</a>
+          <a class="logout-btn" href="index.php">Home</a>
+      </nav>   
+    </header>
+    <section class="sidebar">
+              <div class="logo-sidebar">ADMIN</div>
+                <ul>
+                  <li><a href="dashboard.html"><i class="fas fa-box"></i>Dashboard</a></li>
+                  <li><a href="employeeform.html" class="btn-active"><i class="fas fa-paperclip"></i>Employee Registration</a></li>
+                  <li><a href="attendance.php"><i class="fas fa-check"></i>Attendance</a></li>
+                  <!-- <li><a href="employeelist.html"><i class="fas fa-users"></i>Employee List</a></li> -->
+                  <li><a href="positionlist.php"><i class="fas fa-user-tie"></i>Position List</a></li>
+                  <li><a href="schedule.html"><i class="fas fa-credit-card"></i>Schedule</a></li>
+                  <li><a href="DailyTimeRecord.html"><i class="fas fa-equals"></i>DTR</a></li>
+                  <li><a href="admin_user.php"><i class="fas fa-user"></i>Admin Users</a></li> 
+              </ul>
+        </div>
+    </section>       
+<main class="main">  
+  <div class="card-body">
+      <div class="logo-main">EMPLOYEE FORM</div>
+      <div class="form-content">
+        <form class="form" action="save_employee.php" method="post" onreset="resetForm()">
+             
+            <div class="row-content">
+              <label class="label text" for="name">Name:</label>
+              <input
+                class="input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Full Name"
+                required
+              />
+            </div>
+            <div class="row-content">
+              <label class="label text" for="employee_id">ID:</label>
+              <input
+                class="input"
+                type="text"
+                id="employee_id"
+                name="employee_id"
+                placeholder="Enter ID"
+                required
+              />
+            </div>
+            
+            <div class="row-content">
+              <label class="label text" for="gender">Gender:</label>
+              <div>
+                <label>
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male"
+                    required
+                  />
+                  <label class="text" for="male">Male</label>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                    required
+                  />
+                  <label class="text" for="female">Female</label>
+                </label>
+              </div>
+            </div>
+            <div class="row-content">
+              <label class="label text" for="department">Department:</label>
+              <div>
+                <label>
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    id="barista"
+                    name="department[]"
+                    value="Barista"
+                  />
+                  <label class="text" for="barista">Barista</label>
+                </label>
+                <label>
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    id="cook"
+                    name="department[]"
+                    value="Cook"
+                  />
+                  <label class="text" for="finance">Cashier</label>
+                </label>
+                <label>
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    id="engineer"
+                    name="department[]"
+                    value="Waiter"
+                  />
+                  <label class="text" for="engineer">Waiter</label>
+                </label>
+                <label>
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    id="others"
+                    name="department[]"
+                    value="Others"
+                  />
+                <label class="text" for="others">Others</label>
+                </label>
+                    </div>
+                  </div>
+                  <div class="row-content">
+                    <label class="label text" for="salary">Salary: </label>
+                    <input
+                      class="input"
+                      type="number"
+                      name="salary"
+                      id="salary"
+                      min="315" step="any"
+                      placeholder="Enter salary amount"
+                    />
+                  </div>
+                  <div class="row-content">
+                    <label class="label text" for="start_date">Start Date:</label>
+                    <input
+                      class="input"
+                      type="date"
+                      name="start_date"
+                      id="start_date"
+                      required
+                    />
+                  </div>
+                  <div class="buttonParent">
+                    <div class="submit-reset">
+                      <button class="button submitButton" type="submit" id="submitButton">
+                        Submit
+                      </button>
+                      <button class="resetButton button" type="reset">Reset</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+        </div>
+    </main>
+</body>
+</html>

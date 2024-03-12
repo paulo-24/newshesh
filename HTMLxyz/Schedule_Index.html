@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/schedule_index.css">
+</head>
+<body>
+  <div class="container">
+    <section class="ftco-section">2
+        <div class="container">
+            <button><a href="DailyTimeRecord.html">Daily Time Record</a></button>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center mb-4" id="nonEditableMonthTime"></h4>
+                    <div class="table-wrap">
+                        <table class="table table-bordered text-center" id="nonEditableEmployeeTable">
+                            <thead>
+                            <tr>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="Save-btn" id="saveButton" onclick="window.location.href = 'index.php';">Back</button>
+</div>
+
+
+<script>
+   // Function to update month, date, and time in real-time
+   function updateDateTime() {
+    const now = new Date();
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const month = months[now.getMonth()];
+    const date = now.getDate();
+    const year = now.getFullYear();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    const formattedDateTime = `${month} ${date}, ${year} ${hours}:${minutes}:${seconds}`;
+
+    document.getElementById('nonEditableMonthTime').textContent = formattedDateTime;
+}
+
+// Update time every second
+setInterval(updateDateTime, 1000);
+
+// Initial call to update the time when the page loads
+updateDateTime();
+</script>
+
+<script src="js/schedule.js"></script>
+</body>
+</html>

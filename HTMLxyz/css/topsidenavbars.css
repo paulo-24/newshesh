@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 75px 1fr;
+    grid-template-areas: "side header" "side main"; 
+    
+    
+}
+.logo-sidebar{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;         
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar ul {
+    list-style-type: none;
+    
+}
+.sidebar ul li a{ 
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 17.2px;
+    font-weight: 500;
+    padding : 15px 15px;
+    border-radius: 10px;
+    position: relative;
+    transition: .5s all ease;
+    /*box-shadow: -3px -3px 7px #000000,
+                3px 3px 5px #ceced1;*/
+}
+.sidebar i{
+    padding-right: 10px;
+}
+.sidebar ul li a:hover {
+    background-color: #cc9144;
+}   
+.card-body .logo-main{
+        padding: 25px;
+        color: #fff;
+		font-size: 35px;
+		text-transform: uppercase;
+		font-weight: 800;
+		font-family: "Josefin Sans", sans-serif;
+		background: linear-gradient(to left, #ffffff 5%, rgb(209, 110, 74) 60%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #bd4747;
+		background-clip: text;
+		text-emphasis-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 3s linear infinite;
+		display: inline-block;
+}
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.topnav {
+    overflow: auto;  
+}
+.topnav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /*border-radius: 200px;*/
+}
+.topnav a:hover {
+    background-color: #ffffff;
+    color: rgb(2, 2, 2);
+}
+.topnav a.active {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    
+}
+/**************************************/
+.header{
+    background-color: rgb(209, 110, 74);
+    grid-area: header;
+    color: rgb(255, 255, 255);  
+    box-shadow: -3px -3px 7px #000000,
+                3px 3px 5px #000000;
+ 
+}
+.sidebar{
+    background-color: rgb(209, 147, 74);
+    grid-area: side;
+    color: aqua;
+    box-shadow: -3px -3px 7px #000000,
+                3px 3px 5px #000000;
+}
+.main{
+    grid-area: main;
+    display: grid;
+    padding: 10px;
+}
+.card-body{
+    background-color: rgb(255, 255, 255); 
+    height: 1000px;
+    padding-bottom: 200px;
+    
+}
+

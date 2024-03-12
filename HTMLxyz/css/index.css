@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: first baseline;
+  background-position: center;
+  background-size: 120%;
+  background: linear-gradient(to right, #F3F9A7, #ff8800); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logo{
+    width: 13vh;  
+    height: 15vh;
+    border-radius: 20px;
+    height: 95%;
+    border-radius: 50px;
+    margin-left: 100px; 
+    margin-top: 2px;
+   
+}
+.text .br-name{
+    display: flex;
+    font-family: 'Marcellus SC', serif;
+    font-size:30px;
+    margin-right: 300px;
+    width:100%;
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    position:relative;
+}
+
+.header{
+  background-color:rgb(209, 110, 74);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border: none;
+  z-index: 100;
+  min-width: 875px;
+  padding-right: 22px 12%;
+  box-shadow: 5px 5px 5px 0;
+  height: 90px;
+}
+.br-name{
+    font-weight: 500;
+    letter-spacing: 10px;
+    padding-right: 100px;
+}
+.selection a{
+    font-family: 'Marcellus SC', serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: solid;
+    font-weight: 200;
+    margin-left: 20px;
+    position: relative;
+    margin-right: 15px;
+}
+.selection a::before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: .5s;
+    background: rgb(243, 234, 234);
+}
+.selection a:hover::before{
+    width: 100%;      
+}
+.img{
+  display: flex;
+  margin-left: 75px;
+  margin-right: 20px;
+  margin-top: 110px;
+  border-radius: 10%;
+  width: 40%;
+  height: 520px;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+/* Camera CSS*/ 
+.camera-effect{
+  padding-top: 10px;
+  padding-left: 5px;
+  opacity: 1;
+}
+.camera{
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.video {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+  border-style: solid ;
+}
+.camera-button{
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  font-weight: bolder;
+  padding: .15rem;
+  border-radius: 50%;
+  position: fixed;
+  left: 51.5%;
+  bottom: 26.5%;
+  transform: translateX(-50%) translateY(-20px);
+  background-color: transparent;
+  border: 3px solid rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+}
+.camera-button:hover{
+  background: white;
+  color: #000000;
+  transition: all 200ms linear;
+}
+.canvas{
+  display: none;
+}
+ 
+
+/* Staff login */
+.container {
+  margin-top: 100px;
+  width: 500px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: absolute;
+  right: 150px;
+  box-shadow: 0 0 10px rgba(2, 2, 2, 2);
+}
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group button{
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.form-group button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: #ff8800 solid ;
+  border-radius: 3px;
+  background-color: #ec9d08;
+  color: #ffffff;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: #ffbb00;
+}
+#cameraInput {
+  display: none;
+}
+
+/* Clock RT */
+.clock {
+  margin-left: 100px;
+  width: 170px;
+  height: 45px;
+  background-color: #34495e;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+  color: #ffffff;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Time-btn button{
+  margin-top: 10px;
+  display: inline;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  will-change: box-shadow,transform;
+  background: #FCFCFD;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  height: 40px;
+  padding: 0 32px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #36395a;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+.Time-btn button:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+  transform: translateY(-2px);
+}
+.Time-btn button:active{
+  box-shadow: inset 0px 3px 7px #d6d6e7;
+  transform: translateY(2px);
+}
+
+/* Bg-modal */
+.bg-modal{
+  width: 100%;
+  height: 900px;
+  background-color: rgba(0, 0, 0, 0.87);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.modal-content{
+  margin: auto;
+  margin-top: 110px;
+  width: 400px;
+  height: 520px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+   
+}
+.close{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 30px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.modal-btns button{
+  display: inline-block;
+  padding: 1px 10px;
+  background-color: #36395a;
+  color: #ffffff;
+  border: none;
+  margin-left: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* upload */
+.input-file {
+  display: none;
+}
+.upload-btn {
+  display: inline-block;
+  padding: 1px 10px;
+  background-color: #36395a;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #6f7079;
+}

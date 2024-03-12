@@ -1,0 +1,66 @@
+
+.attendance{
+    text-transform: capitalize;
+}
+.attendance-list{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgb(0, 0, 0.1);
+}
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+table thead tr{
+    color: #ffffff;
+    background: rgb(76, 83, 85);
+    text-align: center;
+    font-weight: 500;
+}
+.table th,
+.table td{
+    padding: 12px 15px;
+}
+.table tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+.table tbody tr:nth-of-type(even){
+    background: #ceced1;
+}
+.table tbody tr.activate{
+    font-weight: bold;
+    color: aquamarine;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

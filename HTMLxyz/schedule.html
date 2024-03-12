@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/topsidenavbars.css">  
+</head>
+<body>
+    <header class="header">
+        <nav class="topnav">
+            <a class="active" href="index.php">Logout</a>
+            <a href="#about">About</a>
+            <a href=" ">Contact</a>
+            <a class="logout-btn" href="index.php">Home</a>
+        </nav>
+    </header>
+    <section class="sidebar">
+              <div class="logo-sidebar">ADMIN</div>
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-box"></i>Dashboard</a></li>
+                    <li><a href="employeeform.html"><i class="fas fa-paperclip"></i>Employee Registration</a></li>
+                    <li><a href="attendance.php"><i class="fas fa-check"></i>Attendance</a></li>
+                   <!--  <li><a href="employeelist.html"><i class="fas fa-users"></i>Employee List</a></li> -->
+                    <li><a href="positionlist.php"><i class="fas fa-user-tie"></i>Position List</a></li>
+                    <li><a href="schedule.html" class="btn-active"><i class="fas fa-credit-card"></i>Schedule List</a></li>
+                    <li><a href="DailyTimeRecord.html"><i class="fas fa-equals"></i>DTR</a></li>
+                    <li><a href="admin_user.php"><i class="fas fa-user"></i>Admin Users</a></li> 
+                </ul>
+        </div>
+    </section>
+    <main class="main">  
+        <div class="card-body">
+            <div class="logo-main">Schedule list</div>
+
+            <div class="container">
+                <section class="ftco-section"> 
+                    <div class="container"> 
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 class="text-center mb-4" id="editableMonthTime"></h4>
+                                <div class="table-wrap">
+                                    <table class="table table-bordered text-center" id="editableEmployeeTable">
+                                        <thead>
+                                        <tr>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                            <th>Sat</th>
+                                            <th>Sun</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                        </tr>
+                                        <tr>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                        </tr>
+                                        <tr>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                        </tr>
+                                        <tr>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                        </tr>
+                                        <tr>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                            <td contenteditable="true"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                </div>
+                                <button class="Save-btn" id="saveButton">Save</button> <!-- Save button -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+        </div>   
+    </main>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

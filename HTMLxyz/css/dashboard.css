@@ -1,0 +1,63 @@
+.btn-active{
+   background-color: rgb(134, 87, 25);
+   width: 260px;
+ }
+.main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.card-body {
+   background-color: #f8f9fa;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+   padding: 20px;
+}
+
+.logo-main {
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.card-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+
+.card-wrapper {
+   flex: 1 1 250px; /* Adjust the width as needed */
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+   padding: 20px;
+   transition: transform 0.3s ease-in-out;
+}
+
+.card-wrapper:hover {
+   transform: scale(1.05); /* Increase the size on hover */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a slight shadow on hover */
+}
+
+.card-header {
+   text-align: center;
+}
+
+.title {
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.icon {
+   margin-right: 5px;
+}
+
+.total-emp {
+   font-size: 24px;
+   font-weight: bold;
+}

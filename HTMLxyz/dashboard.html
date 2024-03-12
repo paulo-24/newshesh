@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/topsidenavbars.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+OutLined"rel="stylesheet">
+    
+</head>
+<body>    
+    <header class="header">
+        <nav class="topnav">
+            <a class="active" href="index.php">Logout</a>
+            <a href="#about">About</a>
+            <a href="">Contact</a>
+           <!--<a class="logout-btn" href="index.php">Home</a>--> 
+        </nav>     
+    </header>
+    <section class="sidebar">
+              <div class="logo-sidebar">ADMIN</div>
+                <ul>
+                    <li><a href="dashboard.html" class="btn-active"><i class="fas fa-box"></i>Dashboard</a></li>
+                    <li><a href="employeeform.html"><i class="fas fa-paperclip"></i>Employee Registration</a></li>
+                    <li><a href="attendance.php"><i class="fas fa-check"></i>Attendance</a></li>
+                    <!-- <li><a href="employeelist.html"><i class="fas fa-users"></i>Employee List</a></li> -->
+                    <li><a href="positionlist.php"><i class="fas fa-user-tie"></i>Position List</a></li>
+                    <li><a href="schedule.html"><i class="fas fa-credit-card"></i>Schedule</a></li>
+                    <li><a href="DailyTimeRecord.html"><i class="fas fa-equals"></i>DTR</a></li>
+                    <li><a href="admin_user.php"><i class="fas fa-user"></i>Admin Users</a></li> 
+                </ul>
+        </div>
+    </section>
+    <main class="main">  
+        <div class="card-body">
+            <div class="logo-main">Dashboard</div>
+            <div class="card-container">
+                <div class="card-wrapper">
+                    <div class="payment-card">
+                        <div class="card-header">
+                            <div class="amount"></div>
+                            <span class="title">Admin</span> <i class="fas fa-user icon"></i><br><br>
+                            <span class="title-total">Total Admin Account: </span>
+                            <span class="total-emp">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="payment-card">
+                        <div class="card-header">
+                            <div class="amount"></div>
+                            <span class="title">Employers</span> <i class="fas fa-users icon"></i><br><br>
+                            <span class="title-total">Total Employee: </span>
+                            <span class="total-emp">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="payment-card">
+                        <div class="card-header">
+                            <div class="amount"></div>
+                            <span class="title">Overtime Cost</span> <i class="fas fa-clock icon"></i><br><br>
+                            <span class="title-total">Total: </span>
+                            <span class="total-emp">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="payment-card">
+                        <div class="card-header">
+                            <div class="amount"></div>
+                            <span class="title">Average Salary</span> <i class="fas fa-dollar-sign icon"></i><br><br>
+                            <span class="title-total">Total: </span>
+                            <span class="total-emp">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="payment-card">
+                        <div class="card-header">
+                            <div class="amount"></div>
+                            <span class="title">Deduction Cost</span> <i class="fas fa-minus     icon"></i><br><br>
+                            <span class="title-total">Total: </span>
+                            <span class="total-emp">0</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+</body>
+</html>

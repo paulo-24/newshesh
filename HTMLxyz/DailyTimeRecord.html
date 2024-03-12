@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deduction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/DailyTimeRecord.css">
+    <link rel="stylesheet" href="css/topsidenavbars.css">   
+</head>
+<body>
+    <header class="header">
+        <nav class="topnav">
+            <a class="active" href="index.php">Logout</a>
+            <a href="#about">About</a>
+            <a href="">Contact</a>
+            <a class="logout-btn" href="index.php">Home</a>
+        </nav>       
+    </header>
+    <section class="sidebar">
+              <div class="logo-sidebar">ADMIN</div>
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-box"></i>Dashboard</a></li>
+                    <li><a href="employeeform.html"><i class="fas fa-paperclip"></i>Employee Registration</a></li>
+                    <li><a href="attendance.php"><i class="fas fa-check"></i>Attendance</a></li>
+                    <!-- <li><a href="employeelist.html"><i class="fas fa-users"></i>Employee List</a></li> -->
+                    <li><a href="positionlist.php"><i class="fas fa-user-tie"></i>Position List</a></li>
+                    <li><a href="schedule.html"><i class="fas fa-credit-card"></i>Schedule</a></li>
+                    <li><a href="DailyTimeRecord.html" class="btn-active"><i class="fas fa-equals"></i>DTR</a></li>
+                    <li><a href="admin_user.php"><i class="fas fa-user"></i>Admin Users</a></li> 
+                </ul>
+        </div>
+    </section> 
+    <main class="main">  
+        <div class="card-body">
+            <div class="logo-main">employee's dtr</div>
+
+            <div class="container" id="print-container">
+                <h2>--Daily Time Record--</h2>
+                <div class="name">
+                    <p>Name: [Employee Name]</p>
+                </div>
+                
+                <table id="dtr-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Day</th>
+                            <th colspan="2">MORNING</th>
+                            <th colspan="2">AFTERNOON</th>
+                            <th rowspan="2">Total Working Hours</th>
+                            <th colspan="2">Overtime</th>
+                            <th rowspan="2">Total Working Hours</th>
+                            <th rowspan="2">Total Salary</th>
+                        </tr>
+                        <tr>
+                            <th>In</th>
+                            <th>Out</th>
+                            <th>In</th>
+                            <th>Out</th>
+                            <th>In</th>
+                            <th>Out</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>     
+                            <td>1</td>
+                            <td>08:00 AM</td>
+                            <td>12:00 NN</td>
+                            <td>01:00 PM</td>
+                            <td>05:00 PM</td>
+                            <td contenteditable="true"></td>
+                            <td>10:00 PM</td>
+                            <td>12:00 PM</td>
+                            <td>15 Hours</td>
+                            <td>1 Million</td>
+                            
+                        </tr> 
+                    </tbody>
+                    <tbody>
+                        <tr>     
+                            <td>1</td>
+                            <td>08:00 AM</td>
+                            <td>12:00 NN</td>
+                            <td>01:00 PM</td>
+                            <td>05:00 PM</td>
+                            <td contenteditable="true"></td>
+                            <td>10:00 PM</td>
+                            <td>12:00 PM</td>
+                            <td>15 Hours</td>
+                            <td>1 Million</td>
+                        </tr> 
+                    </tbody>
+                    <tbody>
+                        <tr>     
+                            <td>1</td>
+                            <td>08:00 AM</td>
+                            <td>12:00 NN</td>
+                            <td>01:00 PM</td>
+                            <td>05:00 PM</td>
+                            <td contenteditable="true"></td>
+                            <td>10:00 PM</td>
+                            <td>12:00 PM</td>
+                            <td>15 Hours</td>
+                            <td>1 Million</td>
+                        </tr> 
+                    </tbody>
+                    <tbody>
+                        <tr>     
+                            <td>1</td>
+                            <td>08:00 AM</td>
+                            <td>12:00 NN</td>
+                            <td>01:00 PM</td>
+                            <td>05:00 PM</td>
+                            <td contenteditable="true"></td>
+                            <td>10:00 PM</td>
+                            <td>12:00 PM</td>
+                            <td>15 Hours</td>
+                            <td>1 Million</td>
+                        </tr> 
+                    </tbody>
+                    <tbody>
+                        <tr>     
+                            <td>1</td>
+                            <td>08:00 AM</td>
+                            <td>12:00 NN</td>
+                            <td>01:00 PM</td>
+                            <td>05:00 PM</td>
+                            <td contenteditable="true"></td>
+                            <td>10:00 PM</td>
+                            <td>12:00 PM</td>
+                            <td>15 Hours</td>
+                            <td>1 Million</td>
+                        </tr> 
+                    </tbody>
+                    <tbody>
+                        <tr>     
+                            <td>1</td>
+                            <td>08:00 AM</td>
+                            <td>12:00 NN</td>
+                            <td>01:00 PM</td>
+                            <td>05:00 PM</td>
+                            <td contenteditable="true"></td>
+                            <td>10:00 PM</td>
+                            <td>12:00 PM</td>
+                            <td>15 Hours</td>
+                            <td>1 Million</td>
+
+                        </tr> 
+                    </tbody>
+                    
+
+                </table>
+                
+                <div class="signature">
+                    <p>SSS: _______________ </p>
+                    <p>Phil Health:  _______________</p>
+                    <p>Pag-Ibig:  _______________ </p>
+                    <p>Employee's Signature:  _______________</p>
+                     <P>Summary: _______________</P>
+                </div>
+
+                <div class="export-btn">
+                    <button onclick="openPrintWindow()">Print Now</button>
+                </div>
+
+            </div>
+        </div>      
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+    <script src="js/DTR.js"></script>
+
+</body>
+</html>

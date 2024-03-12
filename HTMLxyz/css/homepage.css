@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+body{
+  display: flex;
+  background-position: center;
+  background-size: 100%;
+  background-color: rgb(156, 101, 67);
+}
+
+.logo{
+    width: 13vh;  
+    height: 15vh;
+    border-radius: 20px;
+    height: 95%;
+    border-radius: 50px;
+    margin-left: 70px;
+    margin-right: 5px;
+    margin-top: 2px;
+   
+}
+.text .br-name{
+    display: flex;
+    font-family: 'Marcellus SC', serif;
+    font-size:30px;
+    margin-right: 300px;
+    width:100%;
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    position:relative;
+}
+
+.header{
+  background-color:rgb(209, 110, 74);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border: none;
+  z-index: 100;
+  min-width: 875px;
+  padding-right: 22px 12%;
+  box-shadow: 5px 5px 5px 0;
+  height: 90px;
+}
+.br-name{
+    font-weight: 500;
+    letter-spacing: 10px;
+}
+.selection a{
+    font-family: 'Marcellus SC', serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: solid;
+    font-weight: 200;
+    margin-left: 20px;
+    position: relative;
+    margin-right: 15px;
+}
+.selection a::before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: .5s;
+    background: rgb(243, 234, 234);
+}
+.selection a:hover::before{
+    width: 100%;      
+}
+.img{
+    
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 110px;
+  border-radius: 10%;
+  width: 40%;
+  height: 520px;
+  box-shadow: 5px 5px 5px 5px;
+}
+.description{
+    text-align: fixed;
+    position: fixed;
+    margin-top: 100px;
+    padding-left: 600px;
+    padding-right: 50px;
+    font-weight: 500;                                                              
+}
+.description .description-design{
+  font-weight: 200; 
+  font-size: larger; 
+  font-family: 'Marcellus SC', serif;
+  color: rgb(255, 255, 255);
+}
+.description .h1-description{
+  font-family: 'Marcellus SC', serif;
+  font-weight: 900; 
+  padding-top: 10px;
+  color: rgb(238, 183, 42);
+
+  
+}
